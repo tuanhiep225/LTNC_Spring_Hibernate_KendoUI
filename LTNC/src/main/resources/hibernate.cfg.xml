@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd"> 
+    
+<hibernate-configuration>
+    <session-factory>        
+        <mapping class="mta.th12a.tuanhiep.model.Brands" />
+        <mapping class="mta.th12a.tuanhiep.model.Customers" />
+        <mapping class="mta.th12a.tuanhiep.model.Categories" />
+        <mapping class="mta.th12a.tuanhiep.model.OrderDetails" />
+        <mapping class="mta.th12a.tuanhiep.model.Orders" />
+        <mapping class="mta.th12a.tuanhiep.model.ProductSizes" />
+        <mapping class="mta.th12a.tuanhiep.model.ProductColors" />
+        <mapping class="mta.th12a.tuanhiep.model.ProductImages" />
+        <mapping class="mta.th12a.tuanhiep.model.Products" />
+        <mapping class="mta.th12a.tuanhiep.model.ProductStores" />
+        <mapping class="mta.th12a.tuanhiep.dto.ProductStoreDTO" />
+        <mapping class="mta.th12a.tuanhiep.model.ProductStoresObjec" />
+    </session-factory>         
+</hibernate-configuration>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC 
+	"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="admin-layout" template="/WEB-INF/jsp/admin/admin_layout.jsp" >
+    	<put-attribute name="resource_css" value="/WEB-INF/layout/resource_css.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="resource_scripts" value="/WEB-INF/layout/resource_scripts.jsp" />
+        <put-attribute name="footter" value="/WEB-INF/layout/footter.jsp" />       
+	</definition>
+	
+
+	<definition name="brand-index" extends="admin-layout">
+	    <put-attribute name="content" value="/WEB-INF/jsp/admin/brand-index.jsp" />
+	</definition>
+	<definition name="brand-create" extends="admin-layout">
+	    <put-attribute name="content" value="/WEB-INF/jsp/admin/brand-create.jsp" />
+	</definition>
+	<definition name="brand-update" extends="admin-layout">
+	    <put-attribute name="content" value="/WEB-INF/jsp/admin/brand-update.jsp" />
+	</definition>
+	
+	<definition name="category-index" extends="admin-layout">
+	    <put-attribute name="content" value="/WEB-INF/jsp/admin/category-index.jsp" />
+	</definition>
+	<definition name="category-create" extends="admin-layout">
+	    <put-attribute name="content" value="/WEB-INF/jsp/admin/category-create.jsp" />
+	</definition>
+	<definition name="category-update" extends="admin-layout">
+	    <put-attribute name="content" value="/WEB-INF/jsp/admin/category-update.jsp" />
+	</definition>
+	
+	<definition name="product-color-index" extends="admin-layout">
+	    <put-attribute name="content" value="/WEB-INF/jsp/admin/product-color-index.jsp" />
+	</definition>
+	<definition name="product-color-create" extends="admin-layout">
+	    <put-attribute name="content" value="/WEB-INF/jsp/admin/product-color-create.jsp" />
+	</definition>
+	<definition name="product-color-update" extends="admin-layout">
+	    <put-attribute name="content" value="/WEB-INF/jsp/admin/product-color-update.jsp" />
+	</definition>
+	
+	<definition name="product-size-index" extends="admin-layout">
+	    <put-attribute name="content" value="/WEB-INF/jsp/admin/product-size-index.jsp" />
+	</definition>
+	<definition name="product-size-create" extends="admin-layout">
+	    <put-attribute name="content" value="/WEB-INF/jsp/admin/product-size-create.jsp" />
+	</definition>
+	<definition name="product-size-update" extends="admin-layout">
+	    <put-attribute name="content" value="/WEB-INF/jsp/admin/product-size-update.jsp" />
+	</definition>
+	
+	<definition name="customer-index" extends="admin-layout">
+	    <put-attribute name="content" value="/WEB-INF/jsp/admin/customer-index.jsp" />
+	</definition>
+	
+	<definition name="product-index" extends="admin-layout">
+	    <put-attribute name="content" value="/WEB-INF/jsp/admin/product-index.jsp" />
+	</definition>
+	
+	<definition name="product-store-index" extends="admin-layout">
+	    <put-attribute name="content" value="/WEB-INF/jsp/admin/product-store-index.jsp" />
+	</definition>
+	
+	<definition name="upload" extends="admin-layout">
+	    <put-attribute name="content" value="/WEB-INF/jsp/admin/upload.jsp" />
+	</definition>
+	<definition name="login" template="/WEB-INF/jsp/admin/login.jsp">
+	</definition>
+	
+	<definition name="customerlayout" template="/WEB-INF/jsp/customer/layout.jsp" >
+		<put-attribute name="homeheader" value="/WEB-INF/jsp/customer/partial_layout/header.jsp" />
+        <put-attribute name="homecontent" value="" />
+        <put-attribute name="homefooter" value="/WEB-INF/jsp/customer/partial_layout/footer.jsp" />       
+	</definition>
+	
+	<definition name="home-index" extends="customerlayout">
+	    <put-attribute name="homecontent" value="/WEB-INF/jsp/customer/index.jsp" />
+	</definition>
+	<definition name="product-customer" extends="customerlayout">
+	    <put-attribute name="homecontent" value="/WEB-INF/jsp/customer/product.jsp" />
+	</definition>
+	<definition name="checkout" extends="customerlayout">
+	    <put-attribute name="homecontent" value="/WEB-INF/jsp/customer/checkout.jsp" />
+	</definition>
+	<definition name="order" extends="customerlayout">
+	    <put-attribute name="homecontent" value="/WEB-INF/jsp/customer/order.jsp" />
+	</definition>
+	<!-- ERROR PAGE -->
+	<definition name="custom-error" template="/WEB-INF/views/custom-error.jsp" >
+	</definition>
+</tiles-definitions>
